@@ -8,12 +8,12 @@
  */
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
+    /* Initialize variables for left and right leaves */
+    size_t left_leaves = 0, right_leaves = 0;
+
     /* If the tree is empty, return 0 */
     if (tree == NULL)
         return 0;
-
-    /* Initialize variables for left and right leaves */
-    size_t left_leaves = 0, right_leaves = 0;
 
     /* If the node is a leaf, return 1 */
     if (tree->left == NULL && tree->right == NULL)
